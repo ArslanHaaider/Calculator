@@ -5,68 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caclulator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main>
+        <h1 class="main_heading">Basic Caclulator</h1>
         <div class="calculator_body">
-            <div class="calculator_display">
 
+            <div class="calculator_display">
+                <p>Lets do some Math! </p>
             </div>
-            <div class="first_row">
-                <button class="seven integer">
-                    7
-                </button>
-                <button class="eight integer">
-                    8
-                </button>
-                <button class="nine integer">
-                    9
-                </button>
-                <button class="division operator">
-                    /
-                </button>
-            </div>
-            <div class="second_row">
-                <button class="four integer">
-                    4
-                </button>
-                <button class="five integer">
-                    5   
-                </button>
-                <button class="nine integer">
-                    6
-                </button>
-                <button class="multiply operator">
-                    *
-                </button>
-            </div>
-            <div class="third_row">
-                <button class="one integer">
-                    1
-                </button>
-                <button class="two integer">
-                    2
-                </button>
-                <button class="three integer">
-                    3
-                </button>
-                <button class="subtract operator">
-                    -
-                </button>
-            </div>
-            <div class="fourth_row">
-                <button class="zero integer">
-                    0
-                </button>
-                <button class="floating_point operator">
-                    .
-                </button>
-                <button class="equal integer">
-                    =
-                </button>
-                <button class="addition operator">
-                    +
-                </button>
+            <div class="input_buttons">
+                <div class="first_row">
+                    <button class="seven integer">
+                        7
+                    </button>
+                    <button class="eight integer">
+                        8
+                    </button>
+                    <button class="nine integer">
+                        9
+                    </button>
+                    <button class="backspace">
+                        <--
+                    </button>
+                    <button class="division operator">
+                        /
+                    </button>
+                </div>
+                <div class="second_row">
+                    <button class="four integer">
+                        4
+                    </button>
+                    <button class="five integer">
+                        5   
+                    </button>
+                    <button class="nine integer">
+                        6
+                    </button>
+                    <button class="percentage">
+                        %
+                    </button>
+                    <button class="multiply operator">
+                        *
+                    </button>
+                </div>
+                <div class="third_row">
+                    <button class="one integer">
+                        1
+                    </button>
+                    <button class="two integer">
+                        2
+                    </button>
+                    <button class="three integer">
+                        3
+                    </button>
+                    <button class="answer_float">
+                        Float
+                    </button>
+                    <button class="subtract operator">
+                        -
+                    </button>
+                </div>
+                <div class="fourth_row" id="fourth_row">
+                    <button class="zero integer">
+                        0
+                    </button>
+                    <button class="floating_point ">
+                        .
+                    </button>
+                    <button class="equal integer">
+                        =
+                    </button>
+                    <button class="clear">
+                        Clear
+                    </button>
+                    <button class="addition operator">
+                        +
+                    </button>
+                </div>
             </div>
         </div>
     </main>
