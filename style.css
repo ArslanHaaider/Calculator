@@ -40,13 +40,19 @@ main{
     justify-content: space-around;
     align-items: center;
 }
+.operator{
+    background-color: rgb(243, 111, 111);
+}
 
+.equal{
+    background-color: rgb(79, 199, 79);
+}
 .input_buttons button{
     width: 5rem;
     height: 5rem;
     border-radius: 10%;
     font-family: 'Pacifico', cursive;
-    font-size: 100%;
+    font-size: 150%;
 }
 
 .input_buttons div{
@@ -62,7 +68,7 @@ main{
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
-
+    font-size: 150%;
 }
 .calculator_display p{
     font-family: 'Pacifico', cursive;
