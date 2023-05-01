@@ -4,10 +4,10 @@ let firstNumber = "";
 let secondNumber = "";
 let operator = "";
 let integers = document.querySelectorAll(".integer");
-
+let Result = "";
 let operators = document.querySelectorAll(".operator");
 
-
+//Select all integers and add event listeners to them.
 integers.forEach(integer => {
     integer.addEventListener("click", () => {
         if (operator === ""){
@@ -22,7 +22,7 @@ integers.forEach(integer => {
     })
 })
 
-
+//Select all operators  buttons and add event listeners to them.
 operators.forEach(operator_button => {
     operator_button.addEventListener("click", () => {
         operator = operator_button.value;
@@ -32,24 +32,34 @@ operators.forEach(operator_button => {
 
 })
 
-
+//Equals button event listener to calculate equation
 let equals = document.querySelector(".equal");
 
 equals.addEventListener("click", () => {
     switch(operator){
         case  "+":
-            displayScreen.textContent = Number(firstNumber) + Number(secondNumber);
+            result = Number(firstNumber) + Number(secondNumber);
+            displayScreen.textContent = result;
             break;
         case "-":
-
-            displayScreen.textContent = Number(firstNumber) - Number(secondNumber);
+            result = Number(firstNumber) - Number(secondNumber);
+            displayScreen.textContent = result;
             break;
         case "*":
-            displayScreen.textContent = Number(firstNumber) * Number(secondNumber);
+            result = Number(firstNumber) * Number(secondNumber);
+            displayScreen.textContent = result;
             break;
         case "/":
-            displayScreen.textContent = Number(firstNumber) / Number(secondNumber);
+            if(secondNumber === "0"){
+                displayScreen.textContent = "Cannot divide by zero 😢";
+                break
+            }
+            result = Number(firstNumber) / Number(secondNumber);
+            displayScreen.textContent = result;
             break;
+        case "%":
+            result = Number(firstNumber) % Number(secondNumber);
+            displayScreen.textContent = result;
         default:
     }
 })
@@ -88,3 +98,15 @@ backspace.addEventListener("click", () => {
         displayScreen.textContent = "Lets do some Math!"
     }
 })
+
+
+//Float Answer 
+
+let floatAnswer = document.querySelector(".answer_float");
+
+floatAnswer.addEventListener("click", () => {
+    displayScreen.textContent = result.toFixed(2);
+})
+
+
+
